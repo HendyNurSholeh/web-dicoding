@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Quicksand';
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-inline: 20px;
+}
+
+/*Header */
+#top-header img{
+    width: 150px;
+}
+
+#top-header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#header-img{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type : none;
+    flex-flow: row wrap;
+}
+
+
+nav li{
+    padding: 5px 20px;
+}
+
+nav li:hover{
+    background-color: #2b354d;
+    color: white;
+    border-radius: 15px;
+}
+
+/*Content */
+#content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 700px;
+}
+
+#pembungkus{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+
+#text-content {
+    padding-bottom: 15px;
+    line-height: 1.4em;
+}
+
+#more {
+    background-color: #2b354d;
+    color: white;
+    border: 3px solid #2b354d;
+    padding: 9px 24px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+#more:hover {
+    background-color: white;
+    color: #2b354d;
+}
+
+/*Aside */
+
+#aside-icon{
+    position: fixed;
+    right: 0;
+    bottom: 35%;
+}
+
+#aside-icon ul{
+    display: flex;
+    flex-direction: column;
+    padding: 13px 8px 13px 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: #2b354d;
+    gap: 1rem;
+}
+
+#aside-icon li{
+    color: white;
+}
+
+#aside-icon li:hover{
+    color: aqua;
+}
+
+@media screen and (max-width: 520px) {
+    #content {
+        flex-direction: column-reverse;
+    }
+}
